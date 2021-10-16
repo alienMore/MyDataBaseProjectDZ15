@@ -24,7 +24,7 @@ WHERE CatalogDescription LIKE '%Aluminum%';
 ```
 ![](table1.JPG)
 ```sql
---Добавим fulltext index на два позволя
+--Добавим fulltext index на два поля
 ALTER TABLE productmodel ADD FULLTEXT INDEX fulltext_index(CatalogDescription,Instructions);
 ```
 ![](table2.JPG)
