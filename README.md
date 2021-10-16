@@ -36,6 +36,7 @@ SELECT * FROM productmodel
 WHERE MATCH (CatalogDescription,Instructions) AGAINST ('Aluminum');
 --Если построили по двум полям, то и в поиске указывает два поля
 ```
+![](table5.JPG)
 ![](table3.JPG)
 ```sql
 SELECT *,MATCH (CatalogDescription,Instructions) AGAINST ('Aluminum') FROM productmodel;
